@@ -59,3 +59,77 @@ body>footer>a{
     margin: 1rem;
 
 }
+
+/* /////// forever.html /////////////////
+used to make grid pattern
+*/
+
+
+.container{
+    display: grid;
+    
+    
+    right: 0;
+    left: 0;
+    
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);;
+    gap: 0px;
+    background-color: slategray;
+    padding: 0px;
+    text-align: center;
+    color: aliceblue;
+    border: 0pX;
+    border-color: black;
+    border-radius: 15px;
+    overflow: none;
+    margin: 0;
+    
+}
+.card{
+    
+    display: grid;
+    grid-template-rows: 55% 45%;
+    border: 5px silver;
+    border-style: solid;
+    border-radius: 15px;
+    background-color: antiquewhite;
+    padding: 5px;
+    height: 40rem;
+
+
+}
+.picture{
+
+text-align: center;
+align-items: center;
+width: auto;
+height: 70%;;
+border: 2px black;
+
+
+}
+.content{
+
+height:auto;
+border: 2px rgb(12, 5, 139);
+border-style: groove;
+background-color: aquamarine;
+
+}
+.card:hover{
+    opacity: .8;
+    transform: scale(1.1);
+}
+.picture:hover{
+    opacity: 1.5;
+    transform: scale(1.20);
+
+}
+.content:hover{
+    opacity: 1.5;
+    transform: scaleY(1.5);
+    font-size: large;
+    color: midnightblue;
+    overflow-x: visible;
+}
