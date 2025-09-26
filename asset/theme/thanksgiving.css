@@ -32,9 +32,10 @@ body > footer > a {
 }
 
 /* Container and Cards */
-.container {
+.main_container, .container {
     background-color: #fffaf0; /* floral white */
     border: 2px dashed #e1a95f; /* light pumpkin border */
+    color: #d2691e;
     border-radius: 12px;
 }
 

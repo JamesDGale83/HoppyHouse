@@ -32,11 +32,13 @@ body > footer > a {
 }
 
 /* Container and Cards */
-.container {
+.main_container, .container {
   background-color: #f3e5f5; /* lavender hint */
   border: 2px dashed #d7ccc8;
+  color: #4b2e2e;
   border-radius: 12px;
 }
+
 
 .card {
   border-color: #a1887f;

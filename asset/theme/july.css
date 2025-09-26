@@ -31,41 +31,37 @@ body > footer > a {
 }
 
 /* Grid Container & Cards */
-.main_container {
+.main_container, .container {
     background-color: #f5deb3; /* wheat */
     border: 2px dashed #cd853f;
+    color: #002147;
     border-radius: 10px;
 }
-.forever_container {
-    background-color: #f5f5f5;
-    border: 2px dashed #b22234;
-    border-radius: 12px;
-}
 
-.forever_card {
+.card {
     border-color: #002147;
     background-color: #ffffff;
     box-shadow: 0 0 10px #b22234;
 }
 
-.forever_content {
+.content {
     background-color: #e6ecff;
     border-color: #002147;
     color: #002147;
 }
 
 /* Hover Effects */
-.forever_card:hover {
+.card:hover {
     transform: scale(1.05);
     box-shadow: 0 0 15px #b22234;
 }
 
-.forever_picture:hover {
+.picture:hover {
     transform: scale(1.1);
     opacity: 0.9;
 }
 
-.forever_content:hover {
+.content:hover {
     transform: scaleY(1.1);
     font-size: larger;
     color: #b22234;

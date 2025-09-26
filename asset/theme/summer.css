@@ -31,9 +31,10 @@ body > footer > a {
 }
 
 /* Main container and cards */
-.container {
+.main_container, .container {
     background-color: #fafad2; /* light goldenrod */
     border: 2px solid #ffcc00;
+    color: #004d00;
     border-radius: 12px;
 }
 

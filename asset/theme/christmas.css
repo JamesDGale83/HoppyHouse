@@ -57,37 +57,35 @@ body > footer > a {
     color: lightgoldenrodyellow;
 }
 
-.main_container {
-    background-color: #e0e0e0; /* light gray for snow */
+
+.container, .main_container {
+    background-color: darkgreen;
     border: 2px dashed red;
-}
-.forever_container {
-    background-color: #e0e0e0; /* light gray for snow */
-    border: 2px dashed red;
+    color: red;
 }
 
-.forever_card {
+.card {
     border-color: green;
     background-color: #fff8dc; /* cornsilk - warm, soft */
 }
 
-.forever_content {
+.content {
     background-color: #e6ffe6;
     border-color: green;
     color: darkgreen;
 }
 
-.forever_card:hover {
+.card:hover {
     transform: scale(1.05);
     box-shadow: gold;
 }
 
-.forever_picture:hover {
+.picture:hover {
     transform: scale(1.1);
     opacity: 0.9;
 }
 
-.forever_content:hover {
+.content:hover {
     transform: scaleY(1.1);
     font-size: larger;
     color: crimson;

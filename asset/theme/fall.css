@@ -31,14 +31,11 @@ body > footer > a {
 }
 
 /* Container and Cards */
-.main_container {
+
+.container, .main_container {
     background-color: #f5deb3; /* wheat */
     border: 2px dashed #cd853f;
-    border-radius: 10px;
-}
-.forever_container {
-    background-color: #f5deb3; /* wheat */
-    border: 2px dashed #cd853f;
+    color: #8b0000;
     border-radius: 10px;
 }
 
@@ -48,24 +45,24 @@ body > footer > a {
     box-shadow: 0 0 10px #d2b48c; /* tan */
 }
 
-.forever_content {
+.content {
     background-color: #ffebcd; /* blanched almond */
     border-color: #d2691e;
     color: #5c3317; /* dark brown */
 }
 
 /* Hover Effects */
-.forever_card:hover {
+.card:hover {
     transform: scale(1.05);
     box-shadow: 0 0 12px #cd853f;
 }
 
-.forever_picture:hover {
+.picture:hover {
     transform: scale(1.1);
     opacity: 0.9;
 }
 
-.forever_content:hover {
+.content:hover {
     transform: scaleY(1.1);
     font-size: larger;
     color: #8b0000; /* dark red */

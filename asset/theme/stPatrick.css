@@ -32,9 +32,10 @@ body > footer > a {
 }
 
 /* Content Boxes */
-.container {
+.main_container, .container {
   background-color: #e6ffe6; /* very light green */
   border: 2px dashed #66bb6a;
+  color: #004d00;
   border-radius: 12px;
 }
 

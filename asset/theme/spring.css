@@ -31,9 +31,10 @@ body > footer > a {
 }
 
 /* Container and Cards */
-.container {
+.main_container, .container {
     background-color: #edf6f9; /* very light blue */
     border: 2px dashed #a2d2ff;
+    color:blue;
     border-radius: 12px;
 }
 

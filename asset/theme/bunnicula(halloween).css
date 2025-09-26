@@ -31,14 +31,10 @@ body > footer > a {
 }
 
 /* Container and Cards */
-.main_container {
+.main_container, .container{
     background-color: #2c2c2c; /* dark background */
     border: 2px dashed #ff7518;
-    border-radius: 10px;
-}
-.container {
-    background-color: #2c2c2c; /* dark background */
-    border: 2px dashed #ff7518;
+    color: #ff7518;
     border-radius: 10px;
 }
 
