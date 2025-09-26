@@ -1,0 +1,72 @@
+/* 🍂 Fall Theme Overrides */
+html {
+    background: linear-gradient(to bottom, #fef6e4, #f8e1c1); /* warm tan fade */
+    color: #4b2e2e; /* chestnut brown */
+}
+
+header {
+    background-color: #8b4513; /* saddle brown */
+    color: #fffaf0; /* floral white */
+}
+
+header > nav > a {
+    background-color: #d2691e; /* chocolate */
+    color: #fff8dc; /* cornsilk */
+    border: 1px solid #cd853f; /* peru */
+}
+
+header > nav > a:hover {
+    background-color: #a0522d; /* sienna */
+    color: white;
+    border: 1px solid white;
+}
+
+body > footer {
+    background-color: #8b4513;
+    color: white;
+}
+
+body > footer > a {
+    color: #f0e68c; /* khaki */
+}
+
+/* Container and Cards */
+.main_container {
+    background-color: #f5deb3; /* wheat */
+    border: 2px dashed #cd853f;
+    border-radius: 10px;
+}
+.forever_container {
+    background-color: #f5deb3; /* wheat */
+    border: 2px dashed #cd853f;
+    border-radius: 10px;
+}
+
+.card {
+    border-color: #deb887; /* burlywood */
+    background-color: #fffaf0; /* floral white */
+    box-shadow: 0 0 10px #d2b48c; /* tan */
+}
+
+.forever_content {
+    background-color: #ffebcd; /* blanched almond */
+    border-color: #d2691e;
+    color: #5c3317; /* dark brown */
+}
+
+/* Hover Effects */
+.forever_card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 12px #cd853f;
+}
+
+.forever_picture:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+.forever_content:hover {
+    transform: scaleY(1.1);
+    font-size: larger;
+    color: #8b0000; /* dark red */
+}

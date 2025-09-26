@@ -1,0 +1,68 @@
+/* 💘 Valentine's Day Theme */
+
+html {
+    background: linear-gradient(to bottom right, #fff0f5, #ffe4e1); /* lavender blush to misty rose */
+    color: #8b0000; /* dark red for contrast */
+}
+
+header {
+    background-color: #ff69b4; /* hot pink */
+    color: white;
+}
+
+header > nav > a {
+    background-color: #fff0f5; /* lavender blush */
+    color: #c2185b; /* rose red */
+    border: 1px solid #ffb6c1; /* light pink */
+}
+
+header > nav > a:hover {
+    background-color: #ff1493; /* deep pink */
+    color: white;
+    border: 1px solid white;
+}
+
+body > footer {
+    background-color: #c2185b; /* deep rose red */
+    color: white;
+}
+
+body > footer > a {
+    color: #ffd6e0; /* pastel pink */
+}
+
+/* Containers and Cards */
+.container {
+    background-color: #fffafc;
+    border: 2px dashed #ffb6b9;
+    border-radius: 12px;
+}
+
+.card {
+    background-color: #ffe4e1; /* misty rose */
+    border: 2px solid #ffb6c1;
+    box-shadow: 0 0 10px #ffccd5;
+}
+
+.content {
+    background-color: #fff0f5;
+    border: 1px solid #f08080;
+    color: #8b0000;
+}
+
+/* Hover Effects */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 12px #ff99aa;
+}
+
+.picture:hover {
+    transform: scale(1.1);
+    opacity: 0.95;
+}
+
+.content:hover {
+    transform: scaleY(1.1);
+    font-size: larger;
+    color: #c2185b;
+}

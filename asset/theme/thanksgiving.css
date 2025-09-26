@@ -1,0 +1,68 @@
+/* 🦃 Thanksgiving Theme */
+
+html {
+    background: linear-gradient(to bottom right, #fff8f0, #f5e6ca); /* warm ivory to parchment */
+    color: #4e342e; /* dark brown for readability */
+}
+
+header {
+    background-color: #d2691e; /* chocolate pumpkin orange */
+    color: #fff8f0;
+}
+
+header > nav > a {
+    background-color: #f8bb74; /* harvest orange */
+    color: #4e342e;
+    border: 1px solid #a0522d; /* sienna */
+}
+
+header > nav > a:hover {
+    background-color: #8b4513; /* saddle brown */
+    color: white;
+    border: 1px solid white;
+}
+
+body > footer {
+    background-color: #d2691e;
+    color: #fff8f0;
+}
+
+body > footer > a {
+    color: #ffe0b2; /* light buttery tan */
+}
+
+/* Container and Cards */
+.container {
+    background-color: #fffaf0; /* floral white */
+    border: 2px dashed #e1a95f; /* light pumpkin border */
+    border-radius: 12px;
+}
+
+.card {
+    border-color: #cd853f; /* peru */
+    background-color: #fff5e1; /* light warm cream */
+    box-shadow: 0 0 10px #f4a460; /* sandy */
+}
+
+.content {
+    background-color: #fbe8d3; /* parchment */
+    border-color: #deb887; /* burlywood */
+    color: #5d4037; /* deep brown */
+}
+
+/* Hover Effects */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 12px #f4a460;
+}
+
+.picture:hover {
+    transform: scale(1.1);
+    opacity: 0.95;
+}
+
+.content:hover {
+    transform: scaleY(1.1);
+    font-size: larger;
+    color: #bf360c; /* deep burnt orange */
+}

@@ -1,0 +1,67 @@
+/* 🌷 Spring Theme Overrides */
+html {
+    background: linear-gradient(to top right, #fef9f9, #e0f7fa); /* soft pink to light aqua */
+    color: #3b3b3b; /* dark gray for readability */
+}
+
+header {
+    background-color: #a8dadc; /* light teal */
+    color: #2a9d8f;
+}
+
+header > nav > a {
+    background-color: #ffe0f0; /* soft pink */
+    color: #5e548e; /* muted purple */
+    border: 1px solid #b5838d;
+}
+
+header > nav > a:hover {
+    background-color: #cdb4db; /* soft lavender */
+    color: white;
+    border: 1px solid white;
+}
+
+body > footer {
+    background-color: #a8dadc;
+    color: #264653;
+}
+
+body > footer > a {
+    color: #ffafcc; /* spring pink */
+}
+
+/* Container and Cards */
+.container {
+    background-color: #edf6f9; /* very light blue */
+    border: 2px dashed #a2d2ff;
+    border-radius: 12px;
+}
+
+.card {
+    border-color: #ffcbf2; /* pastel pink-purple */
+    background-color: #ffffff; /* white */
+    box-shadow: 0 0 10px #ffc8dd;
+}
+
+.content {
+    background-color: #e2f0cb; /* soft green */
+    border-color: #9ae3d7;
+    color: #52796f; /* muted spring green */
+}
+
+/* Hover Effects */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 12px #ffafcc;
+}
+
+.picture:hover {
+    transform: scale(1.1);
+    opacity: 0.95;
+}
+
+.content:hover {
+    transform: scaleY(1.1);
+    font-size: larger;
+    color: #6d6875; /* earthy mauve */
+}

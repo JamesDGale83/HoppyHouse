@@ -1,0 +1,68 @@
+/* 🐇 National Rabbit Day Theme */
+
+html {
+  background: linear-gradient(to bottom right, #fffaf0, #e6f7ff); /* warm cream to soft blue */
+  color: #4b2e2e; /* soft brown, like a bunny coat */
+}
+
+header {
+  background-color: #c48b6f; /* soft tan */
+  color: white;
+}
+
+header > nav > a {
+  background-color: #ffe0b2; /* light orange-beige */
+  color: #4e342e;
+  border: 2px solid #bcaaa4;
+}
+
+header > nav > a:hover {
+  background-color: #a1887f;
+  color: white;
+  border: 2px solid white;
+}
+
+body > footer {
+  background-color: #8d6e63; /* rich earth tone */
+  color: white;
+}
+
+body > footer > a {
+  color: #fff3e0;
+}
+
+/* Container and Cards */
+.container {
+  background-color: #f3e5f5; /* lavender hint */
+  border: 2px dashed #d7ccc8;
+  border-radius: 12px;
+}
+
+.card {
+  border-color: #a1887f;
+  background-color: #fffaf0;
+  box-shadow: 0 0 10px rgba(193, 154, 107, 0.3); /* bunny fur tones */
+}
+
+.content {
+  background-color: #fce4ec; /* soft pink */
+  border-color: #d7ccc8;
+  color: #5d4037;
+}
+
+/* Hover Effects */
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px #ffe082; /* soft yellow glow */
+}
+
+.picture:hover {
+  transform: scale(1.1);
+  opacity: 0.95;
+}
+
+.content:hover {
+  transform: scaleY(1.1);
+  font-size: larger;
+  color: #6d4c41; /* warm brown */
+}

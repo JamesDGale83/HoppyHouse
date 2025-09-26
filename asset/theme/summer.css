@@ -1,0 +1,67 @@
+/* ☀️ Summer Theme Overrides */
+html {
+    background: linear-gradient(to top right, #fffacd, #87ceeb); /* light yellow to sky blue */
+    color: #004d00; /* deep green for contrast */
+}
+
+header {
+    background-color: #ff8c00; /* dark orange */
+    color: white;
+}
+
+header > nav > a {
+    background-color: #ffd700; /* gold */
+    color: #cc5500; /* burnt orange */
+    border: solid 2px #cc5500;
+}
+
+header > nav > a:hover {
+    background-color: #ffa500; /* orange */
+    color: white;
+    border: solid 2px white;
+}
+
+body > footer {
+    background-color: #ff8c00; /* orange */
+    color: white;
+}
+
+body > footer > a {
+    color: #ffffe0; /* light yellow */
+}
+
+/* Main container and cards */
+.container {
+    background-color: #fafad2; /* light goldenrod */
+    border: 2px solid #ffcc00;
+    border-radius: 12px;
+}
+
+.card {
+    border-color: #f4a460; /* sandy brown */
+    background-color: #fff8dc; /* cornsilk */
+    box-shadow: 0 0 10px #ffdead; /* subtle glow */
+}
+
+.content {
+    background-color: #ffe4b5; /* moccasin */
+    border-color: #ff8c00;
+    color: #8b4513; /* saddle brown */
+}
+
+/* Hover Effects */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 12px #ffa500;
+}
+
+.picture:hover {
+    transform: scale(1.1);
+    opacity: 0.95;
+}
+
+.content:hover {
+    transform: scaleY(1.1);
+    font-size: larger;
+    color: #ff4500; /* orange red */
+}

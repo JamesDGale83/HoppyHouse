@@ -1,0 +1,68 @@
+/* ☘️ St. Patrick's Day Theme */
+
+html {
+  background: linear-gradient(to top left, #e0ffe0, #ccffcc); /* light greens */
+  color: #013220; /* dark green text */
+}
+
+header {
+  background-color: #007f00; /* strong green */
+  color: #fff;
+}
+
+header > nav > a {
+  background-color: #a5d6a7; /* soft green */
+  color: #004d00;
+  border: 2px solid #66bb6a;
+}
+
+header > nav > a:hover {
+  background-color: #004d00;
+  color: gold;
+  border: 2px solid gold;
+}
+
+body > footer {
+  background-color: #007f00;
+  color: white;
+}
+
+body > footer > a {
+  color: gold;
+}
+
+/* Content Boxes */
+.container {
+  background-color: #e6ffe6; /* very light green */
+  border: 2px dashed #66bb6a;
+  border-radius: 12px;
+}
+
+.card {
+  border-color: #388e3c; /* darker green */
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 100, 0, 0.2);
+}
+
+.content {
+  background-color: #dcedc8; /* pastel green */
+  border-color: #81c784;
+  color: #1b5e20;
+}
+
+/* Hover Effects */
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px gold;
+}
+
+.picture:hover {
+  transform: scale(1.1);
+  opacity: 0.95;
+}
+
+.content:hover {
+  transform: scaleY(1.1);
+  font-size: larger;
+  color: #2e7d32; /* vibrant shamrock green */
+}

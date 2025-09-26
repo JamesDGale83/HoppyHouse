@@ -1,0 +1,94 @@
+/* 🎄 Christmas Theme Overrides */
+html {
+    background-color: #f0f8ff; /* light snowy blue */
+    color: darkgreen;
+}
+
+header {
+    background-color: darkred;
+    color: white;
+}
+
+header > nav > a {
+    background-color: darkgreen;
+    color: darkred;
+    border: solid gold;
+}
+
+header > nav > a:hover {
+    background-color: darkgreen;
+    color: white;
+    border: solid white;
+}
+
+/* Animated Snowflake Background */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background-image: url("image/snowflake_white_piskelapp-1.png");
+    background-repeat: repeat;
+    background-size: 150px; /* adjust size of flakes */
+    opacity: 0.3; /* subtle effect */
+    animation: snowflakes 60s linear infinite;
+    z-index: -1; /* stays behind everything */
+    pointer-events: none; /* so it doesn’t block clicks */
+}
+
+/* Keyframes to move the snowflakes */
+@keyframes snowflakes {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-200px, 200px); /* drift down & left */
+    }
+}
+
+body > footer {
+    background-color: darkred;
+    color: white;
+}
+
+body > footer > a {
+    color: lightgoldenrodyellow;
+}
+
+.main_container {
+    background-color: #e0e0e0; /* light gray for snow */
+    border: 2px dashed red;
+}
+.forever_container {
+    background-color: #e0e0e0; /* light gray for snow */
+    border: 2px dashed red;
+}
+
+.forever_card {
+    border-color: green;
+    background-color: #fff8dc; /* cornsilk - warm, soft */
+}
+
+.forever_content {
+    background-color: #e6ffe6;
+    border-color: green;
+    color: darkgreen;
+}
+
+.forever_card:hover {
+    transform: scale(1.05);
+    box-shadow: gold;
+}
+
+.forever_picture:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+.forever_content:hover {
+    transform: scaleY(1.1);
+    font-size: larger;
+    color: crimson;
+}

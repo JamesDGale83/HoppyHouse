@@ -1,0 +1,68 @@
+/* ❄️ Winter Theme - January (Non-Holiday) */
+
+html {
+    background: linear-gradient(to bottom, #e0f7fa, #ffffff); /* icy blue to snow white */
+    color: #1c2c40; /* deep cool navy */
+}
+
+header {
+    background-color: #b0c4de; /* light steel blue */
+    color: #1c2c40;
+}
+
+header > nav > a {
+    background-color: #f0f8ff; /* alice blue */
+    color: #1c2c40;
+    border: 1px solid #d3eaf2;
+}
+
+header > nav > a:hover {
+    background-color: #aec6cf; /* dusty icy blue */
+    color: white;
+    border: 1px solid white;
+}
+
+body > footer {
+    background-color: #b0c4de;
+    color: #1c2c40;
+}
+
+body > footer > a {
+    color: #dceefa; /* frosty white-blue */
+}
+
+/* Container and Cards */
+.container {
+    background-color: #f5fafd;
+    border: 2px dashed #cfd8dc;
+    border-radius: 12px;
+}
+
+.card {
+    border-color: #b0bec5; /* muted silver-blue */
+    background-color: #ffffff;
+    box-shadow: 0 0 10px #e1f5fe;
+}
+
+.content {
+    background-color: #e3f2fd; /* soft blue */
+    border-color: #bbdefb;
+    color: #1c2c40;
+}
+
+/* Hover Effects */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 12px #90caf9;
+}
+
+.picture:hover {
+    transform: scale(1.1);
+    opacity: 0.95;
+}
+
+.content:hover {
+    transform: scaleY(1.1);
+    font-size: larger;
+    color: #0d47a1;
+}

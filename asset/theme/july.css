@@ -1,0 +1,72 @@
+/* 🇺🇸 4th of July Theme */
+html {
+    background: linear-gradient(to top, #ffffff, #d6e4f0); /* white to light blue */
+    color: #002147; /* navy blue */
+}
+
+header {
+    background-color: #b22234; /* American flag red */
+    color: white;
+}
+
+header > nav > a {
+    background-color: #ffffff;
+    color: #002147;
+    border: 2px solid #b22234;
+}
+
+header > nav > a:hover {
+    background-color: #002147;
+    color: white;
+    border: 2px solid white;
+}
+
+body > footer {
+    background-color: #002147;
+    color: white;
+}
+
+body > footer > a {
+    color: #ffcccb; /* light red/pink for contrast */
+}
+
+/* Grid Container & Cards */
+.main_container {
+    background-color: #f5deb3; /* wheat */
+    border: 2px dashed #cd853f;
+    border-radius: 10px;
+}
+.forever_container {
+    background-color: #f5f5f5;
+    border: 2px dashed #b22234;
+    border-radius: 12px;
+}
+
+.forever_card {
+    border-color: #002147;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px #b22234;
+}
+
+.forever_content {
+    background-color: #e6ecff;
+    border-color: #002147;
+    color: #002147;
+}
+
+/* Hover Effects */
+.forever_card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #b22234;
+}
+
+.forever_picture:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+.forever_content:hover {
+    transform: scaleY(1.1);
+    font-size: larger;
+    color: #b22234;
+}
