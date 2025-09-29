@@ -99,14 +99,9 @@ used to make grid pattern
 
 
 .container{
-    display: grid;
-    
-    
-    right: 0;
-    left: 0;
-    
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
     gap: 0px;
     background-color: slategray;
     padding: 0px;
