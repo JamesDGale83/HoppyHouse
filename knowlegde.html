@@ -13,6 +13,7 @@
 
   <style>
     
+    
   </style>
 </head>
 
@@ -28,10 +29,59 @@
     </nav>
   </header>
   <main>
-    <!-- content here -->
-     <h2>header is hear</h2>
-     <p> and more word that go to paragraph go</p>
-     <p> here are some facts to keep your rabbit safe</p>
+    <!-- Side nave box-->
+    <div class="side_nav">
+      <h2> <a href="#top">top</a></h2>
+      <h2> <a href="#spot1">FEEDING</a></h2>
+      <h2> <a href="#spot2">COMMUNICATION</a></h2>
+      <h2> <a href="#spot3">RABBIT TROUBLES</a></h2>
+      <h2> <a href="#spot4">VETS</a></h2>
+      <h2> <a href="#bottom">bottom</a></h2>
+
+    </div>
+
+    <div class="content">
+      <div id="top"><p>top</p></div>
+      <!-- content here -->
+
+      <div class="slide-container">
+
+        <h2 id="spot1">How to feed your rabbit</h2>
+
+        <div class="slide active">
+          <p>and more word that go to paragraph go</p>
+        </div>
+
+        <div class="slide">
+          <p>here are some facts to keep your rabbit safe</p>
+        </div>
+
+        <button class="prev">❮ Prev</button>
+        <button class="next">Next ❯</button>
+      </div>
+
+
+      <div>
+        <h2 id="spot2">How rabbits communicate</h2>
+        <p> and more word that go to paragraph go</p>
+        <p> here are some facts to keep your rabbit safe</p>
+      </div>
+
+      <div>
+        <h2 id="spot3">How identify troubles in your rabbit</h2>
+        <p> and more word that go to paragraph go</p>
+        <p> here are some facts to keep your rabbit safe</p>
+      </div>
+
+      <div>
+        <h2 id="spot4">list of Rabbit vets</h2>
+        <p> and more word that go to paragraph go</p>
+        <p> here are some facts to keep your rabbit safe</p>
+      </div>
+
+      <div id="bottom"><p>bottom</p></div>
+    </div>
+
   </main>
   <footer>
     <!-- footer here -->
@@ -53,9 +103,30 @@
    
   -->
    <script src="asset/theme/theme.js"></script>
-  <script>
-    
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+      const slides = document.querySelectorAll('.slide');
+      let currentSlide = 0;
+
+      function showSlide(index) {
+        slides.forEach(slide => slide.classList.remove('active'));
+        slides[index].classList.add('active');
+      }
+
+      document.querySelector('.next').addEventListener('click', () => {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+      });
+
+      document.querySelector('.prev').addEventListener('click', () => {
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        showSlide(currentSlide);
+      });
+
+      showSlide(currentSlide); // Show first slide on load
+    });
   </script>
+
 </html>
 
 

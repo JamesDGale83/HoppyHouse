@@ -76,17 +76,17 @@ body > footer > a {
 }
 
 .card:hover {
-    transform: scale(1.05);
+    
     box-shadow: gold;
 }
 
 .picture:hover {
-    transform: scale(1.1);
+  
     opacity: 0.9;
 }
 
 .content:hover {
-    transform: scaleY(1.1);
+    
     font-size: larger;
     color: crimson;
 }

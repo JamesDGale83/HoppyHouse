@@ -53,17 +53,17 @@ body > footer > a {
 
 /* Hover Effects */
 .card:hover {
-    transform: scale(1.05);
+   
     box-shadow: 0 0 12px #f4a460;
 }
 
 .picture:hover {
-    transform: scale(1.1);
+   
     opacity: 0.95;
 }
 
 .content:hover {
-    transform: scaleY(1.1);
+    
     font-size: larger;
     color: #bf360c; /* deep burnt orange */
 }

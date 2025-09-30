@@ -1,6 +1,12 @@
+/* need to add to theme
+
+side_nav , slide , slide-button
+*/
+
 html{
         background-color:aqua;
         color:rgb(232, 9, 161);
+        scroll-behavior: smooth;
     }
 
 header{
@@ -40,11 +46,72 @@ header>nav>a:hover{
     color: white;
     border: 1px solid white;
 }
+
+/* ///////////BODY //////////////////  */
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
 
 }
+/* Layout container for side nav and content */
+main {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+}
+
+/* Side navigation styles */
+.side_nav {
+  width: 20%;
+  background-color: mediumblue;
+  padding: 1rem;
+  color: white;
+  box-sizing: border-box;
+
+  position:fixed;
+  top:10rem;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.side_nav h2 {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+
+.side_nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.side_nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main content area */
+main > .content {
+  width: 80%;
+  padding: 1rem;
+  box-sizing: border-box;
+
+  margin-left: 20%;/* match side_nav*/
+  
+
+}
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  .side_nav, 
+  main > .content {
+    width: 100%;
+  }
+}
+
+
 
 
 body>footer{
@@ -98,7 +165,7 @@ used to make grid pattern
 */
 
 
-.container{
+.F_container{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -114,7 +181,7 @@ used to make grid pattern
     margin: 0;
     
 }
-.card{
+.F_card{
     
     display: grid;
     grid-template-rows: 55% 45%;
@@ -127,7 +194,7 @@ used to make grid pattern
 
 
 }
-.picture{
+.F_picture{
 
 text-align: center;
 align-items: center;
@@ -137,7 +204,7 @@ border: 2px black;
 
 
 }
-.content{
+.F_content{
 
 height:auto;
 border: 2px rgb(12, 5, 139);
@@ -145,21 +212,56 @@ border-style: groove;
 background-color: aquamarine;
 
 }
-.card:hover{
+.F_card:hover{
     opacity: .8;
-    transform: scale(1.1);
+
+    /*transform: scale(1.1); */
 }
-.picture:hover{
+.F_picture:hover{
     opacity: 1.5;
-    transform: scale(1.20);
+    
+    /* transform: scale(1.20); */
 
 }
-.content:hover{
+.F_content:hover{
     opacity: 1.5;
-    transform: scaleY(1.5);
+    
+
     font-size: large;
     color: midnightblue;
     overflow-x: visible;
+    /* transform: scaleY(1.5); */
+
+
 }
 
+/*////////////knowledge page////////////  */
+
+.slide {
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+.slide-container {
+  position: relative;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: white;
+  border: 2px solid midnightblue;
+  border-radius: 1rem;
+}
+
+.slide-container button {
+  margin: 1rem 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: mediumblue;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
 

@@ -54,17 +54,17 @@ body > footer > a {
 
 /* Hover Effects */
 .card:hover {
-  transform: scale(1.05);
+  
   box-shadow: 0 0 12px #ffe082; /* soft yellow glow */
 }
 
 .picture:hover {
-  transform: scale(1.1);
+  
   opacity: 0.95;
 }
 
 .content:hover {
-  transform: scaleY(1.1);
+  
   font-size: larger;
   color: #6d4c41; /* warm brown */
 }
