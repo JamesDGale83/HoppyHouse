@@ -247,12 +247,14 @@ background-color: aquamarine;
 
 .slide-container {
   position: relative;
-  max-width: 600px;
+  max-width: 75%;
   margin: 2rem auto;
   padding: 1rem;
   background-color: white;
   border: 2px solid midnightblue;
   border-radius: 1rem;
+  display: flexbox;
+  
 }
 
 .slide-container button {
@@ -263,5 +265,10 @@ background-color: aquamarine;
   border: none;
   border-radius: 0.5rem;
   cursor: pointer;
+}
+
+.slide-container img {
+  width: 50%;
+  height: auto;
 }
 

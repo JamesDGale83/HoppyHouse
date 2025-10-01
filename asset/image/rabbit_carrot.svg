@@ -1,0 +1,23 @@
+
+<svg width="500" height="500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Dividing line -->
+  <line x1="250" y1="0" x2="250" y2="500" stroke="black" />
+
+  <!-- Labels -->
+  <text x="125" y="30" text-anchor="middle" font-size="16" fill="green">Healthy Rabbit</text>
+  <text x="375" y="30" text-anchor="middle" font-size="16" fill="red">Fat Rabbit</text>
+
+  <!-- Healthy Rabbit (Top Left) -->
+  <ellipse cx="125" cy="150" rx="40" ry="60" fill="lightgray" />
+  <circle cx="125" cy="90" r="20" fill="lightgray" />
+  <rect x="110" y="60" width="10" height="30" fill="lightgray" />
+  <rect x="130" y="60" width="10" height="30" fill="lightgray" />
+  <text x="125" y="230" text-anchor="middle" font-size="12" fill="black">Eating romaine & hay</text>
+
+  <!-- Fat Rabbit (Top Right) -->
+  <ellipse cx="375" cy="150" rx="60" ry="80" fill="gray" />
+  <circle cx="375" cy="90" r="25" fill="gray" />
+  <rect x="360" y="60" width="10" height="30" fill="gray" />
+  <rect x="380" y="60" width="10" height="30" fill="gray" />
+  <text x="375" y="230" text-anchor="middle" font-size="12" fill="black">Eating whole carrot</text>
+</svg>
