@@ -1,6 +1,6 @@
 /* need to add to theme
 
-side_nav , slide , slide-button
+side_nav , slide , slide-button  trouble(box color and text h3,h4,p,li)
 */
 
 html{
@@ -251,8 +251,10 @@ background-color: aquamarine;
   max-width: 75%;
   margin: 2rem auto;
   padding: 1rem;
+  /*
   background-color: white;
   border: 2px solid midnightblue;
+  */
   border-radius: 1rem;
   display: flexbox;
   
@@ -271,5 +273,36 @@ background-color: aquamarine;
 .slide-container img {
   width: 50%;
   height: auto;
+}
+
+.troubles_group{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-width: .5rem;
+  border: solid;
+  border-radius: 1rem;
+  border-color: black;
+  
+}
+#spot3{
+  width: 100%;
+}
+
+.trouble{
+  width: 40%;
+  text-align: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-items: center;
+  border-width: .5rem;
+  border: solid;
+  border-radius: 1rem;
+  border-color: black;
+
+
+
 }
 
