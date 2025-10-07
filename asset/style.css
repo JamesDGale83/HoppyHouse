@@ -63,15 +63,15 @@ main {
 
 /* Side navigation styles */
 .side_nav {
-  width: 20%;
+  width: 15%;
   background-color: mediumblue;
-  padding: 1rem;
+  padding: 1vh 1vw;
   color: white;
   box-sizing: border-box;
 
   position:fixed;
-  top:10rem;
-  height: 100vh;
+  top:22vh;
+  height: 70vh;
   overflow-y: auto;
 }
 
@@ -91,7 +91,7 @@ main {
 
 /* Main content area */
 main > .content {
-  width: 80%;
+  width: 85%;
   padding: 1rem;
   box-sizing: border-box;
 
@@ -107,7 +107,7 @@ main > .content {
 
   .side_nav, 
   main > .content {
-    width: 100%;
+    width: 20%;
   }
 }
 
