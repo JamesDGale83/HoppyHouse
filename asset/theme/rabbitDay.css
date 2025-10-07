@@ -65,6 +65,6 @@ body > footer > a {
 
 .content:hover {
   
-  font-size: larger;
+  /*font-size: larger;*/
   color: #6d4c41; /* warm brown */
 }

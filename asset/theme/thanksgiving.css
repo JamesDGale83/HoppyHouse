@@ -64,6 +64,6 @@ body > footer > a {
 
 .content:hover {
     
-    font-size: larger;
+    /*font-size: larger;*/
     color: #bf360c; /* deep burnt orange */
 }

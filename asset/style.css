@@ -228,10 +228,12 @@ background-color: aquamarine;
     opacity: 1.5;
     
 
-    font-size: large;
+    
     color: midnightblue;
     overflow-x: visible;
-    /* transform: scaleY(1.5); */
+    /* transform: scaleY(1.5); 
+    font-size: large;
+    */
 
 
 }
@@ -246,15 +248,15 @@ background-color: aquamarine;
   display: inline-block;
 }
 
-.slide-container {
+.slide-container, .troubles_group {
   position: relative;
   max-width: 75%;
   margin: 2rem auto;
   padding: 1rem;
-  /*
+  
   background-color: white;
   border: 2px solid midnightblue;
-  */
+  
   border-radius: 1rem;
   display: flexbox;
   
@@ -299,10 +301,16 @@ background-color: aquamarine;
   align-items: center;
   border-width: .5rem;
   border: solid;
-  border-radius: 1rem;
+  border-radius: clamp(0.3rem, 1vw, 1rem);
   border-color: black;
+}
+.trouble > img {
+  width: 80%;
+}
 
-
+.conclusion {
+  display: block;
+  width: 100%;
 
 }
 

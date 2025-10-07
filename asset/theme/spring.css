@@ -63,6 +63,6 @@ body > footer > a {
 
 .content:hover {
     
-    font-size: larger;
+    /*font-size: larger;*/
     color: #6d6875; /* earthy mauve */
 }

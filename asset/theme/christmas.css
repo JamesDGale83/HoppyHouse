@@ -29,13 +29,15 @@ body::before {
     left: 0;
     width: 200%;
     height: 200%;
-    background-image: url("image/snowflake_white_piskelapp-1.png");
-    background-repeat: repeat;
-    background-size: 150px; /* adjust size of flakes */
-    opacity: 0.3; /* subtle effect */
-    animation: snowflakes 60s linear infinite;
-    z-index: -1; /* stays behind everything */
-    pointer-events: none; /* so it doesn’t block clicks */
+   
+    /*
+            background-image: url("image/snowflake_white_piskelapp-1.png");
+            background-repeat: repeat;
+            background-size: 150px; /* adjust size of flakes */
+    /*        opacity: 0.3; /* subtle effect */
+     /*       animation: snowflakes 60s linear infinite;
+    /*        z-index: -1; /* stays behind everything */
+    /*        pointer-events: none; /* so it doesn’t block clicks */
 }
 
 /* Keyframes to move the snowflakes */
@@ -87,6 +89,6 @@ body > footer > a {
 
 .content:hover {
     
-    font-size: larger;
+    /*font-size: larger;*/
     color: crimson;
 }

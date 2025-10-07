@@ -111,6 +111,8 @@
     */
 
     /*  ///////// MINUTE BASE SWITCHING /////////////// */
+
+    
     function applySeasonalTheme() {
   const now = new Date();
   const minute = now.getMinutes();
@@ -126,6 +128,9 @@
   link.href = `asset/theme/${selectedTheme.file}`;
   document.head.appendChild(link);
 }
+
+
+
  /*  ///////// MINUTE BASE SWITCHING /////////////// */
 
     applySeasonalTheme();
