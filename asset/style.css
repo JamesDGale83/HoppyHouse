@@ -161,12 +161,12 @@ used to make grid pattern
     
 }
 
-/* /////// forever.html /////////////////
+/* /////// forever.html ///// adoption.html////////////
 used to make grid pattern
 */
 
 
-.F_container{
+.A_container .F_container{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -175,16 +175,17 @@ used to make grid pattern
     padding: 0px;
     text-align: center;
     color: aliceblue;
-    border: 0pX;
+    border: 1pX solid;
     border-color: black;
     border-radius: 15px;
     overflow: none;
     margin: 0;
     
 }
-.F_card{
+
+.F_card .A_card{
     
-    display: grid;
+    display: flex;
     grid-template-rows: 55% 45%;
     border: 5px silver;
     border-style: solid;
@@ -195,17 +196,17 @@ used to make grid pattern
 
 
 }
-.F_picture{
+.F_picture .A_picture {
 
 text-align: center;
 align-items: center;
-width: auto;
-height: 70%;;
+width: 500px;
+height: auto;
 border: 2px black;
 
 
 }
-.F_content{
+.F_content .A_content{
 
 height:auto;
 border: 2px rgb(12, 5, 139);
@@ -213,18 +214,18 @@ border-style: groove;
 background-color: aquamarine;
 
 }
-.F_card:hover{
+.F_card:hover .A_card:hover{
     opacity: .8;
 
     /*transform: scale(1.1); */
 }
-.F_picture:hover{
+.F_picture:hover .A_picture:hover{
     opacity: 1.5;
     
     /* transform: scale(1.20); */
 
 }
-.F_content:hover{
+.F_content:hover .A_content:hover{
     opacity: 1.5;
     
 
