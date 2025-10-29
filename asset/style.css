@@ -91,7 +91,7 @@ main {
 
 /* Main content area */
 main > .content {
-  width: 85%;
+  width: auto;
   padding: 1rem;
   box-sizing: border-box;
 
@@ -166,7 +166,7 @@ used to make grid pattern
 */
 
 
-.A_container .F_container{
+.A_container, .F_container{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -182,11 +182,25 @@ used to make grid pattern
     margin: 0;
     
 }
-
-.F_card .A_card{
+.A_card{
     
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid silver;
+    border-radius: 15px;
+    background-color: antiquewhite;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;     
+    box-sizing: border-box;
+}
+
+.F_card {
+    
+    display: grid;
     grid-template-rows: 55% 45%;
+    /*grid-template-columns: 55% 45%; shift to this to go picture and discription side by side */
     border: 5px silver;
     border-style: solid;
     border-radius: 15px;
@@ -196,17 +210,18 @@ used to make grid pattern
 
 
 }
-.F_picture .A_picture {
+.F_picture, .A_picture {
 
-text-align: center;
 align-items: center;
-width: 500px;
+width: 100%;
 height: auto;
 border: 2px black;
+object-fit: cover;
+display: block;
 
 
 }
-.F_content .A_content{
+.F_content, .A_content{
 
 height:auto;
 border: 2px rgb(12, 5, 139);
@@ -214,18 +229,18 @@ border-style: groove;
 background-color: aquamarine;
 
 }
-.F_card:hover .A_card:hover{
+.F_card:hover, .A_card:hover{
     opacity: .8;
 
     /*transform: scale(1.1); */
 }
-.F_picture:hover .A_picture:hover{
+.F_picture:hover, .A_picture:hover{
     opacity: 1.5;
     
     /* transform: scale(1.20); */
 
 }
-.F_content:hover .A_content:hover{
+.F_content:hover, .A_content:hover{
     opacity: 1.5;
     
 
