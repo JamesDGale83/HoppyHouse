@@ -95,7 +95,7 @@ main > .content {
   padding: 1rem;
   box-sizing: border-box;
 
-  margin-left: 20%;/* match side_nav*/
+  
   
 
 }
@@ -192,7 +192,7 @@ used to make grid pattern
     background-color: antiquewhite;
     padding: 10px;
     margin: 10px;
-    width: 300px;     
+    width: 50%;     
     box-sizing: border-box;
 }
 
