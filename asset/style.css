@@ -330,3 +330,37 @@ background-color: aquamarine;
 
 }
 
+
+.rabbit_animation-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+  z-index: 1000;
+  background: none;        /* ensure no background fill */
+  border: none;            /* no border outline */
+}
+
+.rabbit_animation {
+  position: absolute;
+  bottom: 20px;
+  width: 100px;
+  animation: hopBack 20s linear infinite; /* slower + reversed */
+  background-color: none;
+}
+
+/* Animation for moving right → left */
+@keyframes hopBack {
+  0% {
+    left: 100vw;           /* start off-screen on the right */
+    transform: scaleX(1); /* face left */
+  }
+  50% {
+    bottom: 40px;          /* hop mid-air */
+  }
+  100% {
+    left: -150px;          /* move off-screen to the left */
+    transform: scaleX(1);
+  }
+}
