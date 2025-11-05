@@ -10,13 +10,25 @@ html{
     }
 
 header{
+    position: absolute;
+    top: 0;
+    left: 0;
     background-color: mediumblue;
     color:white;
+    position: sticky;
+    z-index: 5;
 
 }
-header>img{
-    max-width: 20vw;
+header img{
+    position: absolute;
+    top:0;
+    right: 2rem;
+    max-width: 60vw;
+    width: 30rem;
     margin: 1rem;
+    border: none;
+    border-radius: 0;
+
 
 }
 header>h1{
@@ -348,6 +360,11 @@ background-color: aquamarine;
   width: 100px;
   animation: hopBack 20s linear infinite; /* slower + reversed */
   background-color: none;
+  border: none !important;
+  border-radius: 0 !important;
+  background: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* Animation for moving right → left */
