@@ -24,6 +24,8 @@ header img{
     top:0;
     right: 2rem;
     max-width: 60vw;
+    max-height: 20vh;
+    
     width: 30rem;
     margin: 1rem;
     border: none;
@@ -357,7 +359,7 @@ background-color: aquamarine;
 .rabbit_animation {
   position: absolute;
   bottom: 20px;
-  width: 100px;
+  width: 50px;
   animation: hopBack 20s linear infinite; /* slower + reversed */
   background-color: none;
   border: none !important;
