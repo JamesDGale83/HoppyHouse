@@ -11,6 +11,8 @@ html{
 
 header{
     position: absolute;
+    display: block;
+    width: 100vw;
     top: 0;
     left: 0;
     background-color: mediumblue;
@@ -19,12 +21,18 @@ header{
     z-index: 5;
 
 }
-header img{
-    position: absolute;
-    top:0;
-    right: 2rem;
+.header_stuff {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 0;
+  padding: 0;
+}
+.header_stuff > img{
+  
+    top:2rem;
+    right: calc();
     max-width: 60vw;
-    max-height: 20vh;
+    max-height: 30vh;
     
     width: 30rem;
     margin: 1rem;
@@ -39,15 +47,8 @@ header>h1{
     vertical-align: top;
 }
 
-header>nav>a{
-    background-color: white;
-    color: midnightblue;
-    text-decoration: none;
-    padding: 1rem;
-    display: inline-block;
-    border: 1px solid transparent;
-}
-header>nav{
+.header_stuff>nav{
+    max-width: calc(80%-4rem) ;
     padding-bottom: 0rem;
     padding-left: 1rem;
     
@@ -55,7 +56,17 @@ header>nav{
     padding-top: 1rem;
 
 }
-header>nav>a:hover{
+
+.header_stuff>nav>a{
+    background-color: white;
+    color: midnightblue;
+    text-decoration: none;
+    padding: 1rem;
+    display: inline-block;
+    border: 1px solid transparent;
+}
+
+.header_stuff>nav>a:hover{
     background-color: midnightblue;
     color: white;
     border: 1px solid white;
