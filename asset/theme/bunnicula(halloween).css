@@ -9,13 +9,13 @@ header {
     color: black;
 }
 
-header  nav > a {
+header  nav > a, .header_stuff>nav>a {
     background-color: #3d0066; /* deep purple */
     color: #ffcc00; /* eerie yellow */
     border: 2px solid black;
 }
 
-header  nav > a:hover {
+header  nav > a:hover, .header_stuff>nav>a:hover {
     background-color: black;
     color: orange;
     border: 2px solid orange;
