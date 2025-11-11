@@ -14,6 +14,7 @@ header {
   top: 0;
   left: 0;
   width: 100vw;
+  max-height: calc(50vh - 50px);
   margin: 0;
   padding:1rem;
   background-color: mediumblue;
@@ -25,7 +26,11 @@ header {
   justify-content: space-between;
 }
 
-header>h1{
+.small_screen {
+  display: none;
+}
+
+header>h1, .header_top > h1{
     display: inline-block;
     margin: 1rem 0;
     vertical-align: top;
@@ -43,11 +48,10 @@ header>h1{
 
 
 .header_stuff>nav, header > nav {
-    max-width: calc(80%-4rem) ;
+    max-width: calc(80%-3rem) ;
     width: 60;
     padding-bottom: 0rem;
     padding-left: 1rem;
-    
     padding-right: 0rem;
     padding-top: 1rem;
 
@@ -206,17 +210,17 @@ used to make grid pattern
 .A_container, .F_container{
   display: flex;
   flex-wrap: wrap;
+  gap: 0rem;
   justify-content: center;
-    gap: 0px;
-    background-color: slategray;
-    padding: 0px;
-    text-align: center;
-    color: aliceblue;
-    border: 1pX solid;
-    border-color: black;
-    border-radius: 15px;
-    overflow: none;
-    margin: 0;
+  background-color: slategray;
+  padding: 0px;
+  text-align: center;
+  color: aliceblue;
+  border: 1pX solid;
+  border-color: black;
+  border-radius: 15px;
+  overflow: none;
+  margin: 0;
     
 }
 .A_card{
@@ -406,3 +410,114 @@ background-color: aquamarine;
     transform: scaleX(1);
   }
 }
+
+/* ///////////// screen size //////////////////////// */
+
+/* < 800 px 
+
++--------------------------------------+
+| HOPPY HOUSE RABBIT RESCUE     (logo) |
++--------------------------------------+
+| navigation links...                  |
++--------------------------------------+
+| one column of content                |
++--------------------------------------+
+| footer                               |
++--------------------------------------+
+
+*/
+@media (max-width: 800px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    display: inline-block;
+  }
+
+  .header_stuff {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: calc(90% - 200 px);
+    padding-top: 0.5rem;
+  }
+
+  .header_stuff > nav {
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    align-content: flex-start;
+    gap: 0.5rem;
+    
+  }
+
+  .header_stuff > nav > a {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.9rem;
+  }
+  header > h1 {
+    display: inline-block;
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+  }
+
+  .small_screen {
+    position: absolute;
+    top: 1vh;
+    right: 3vh;
+    display: inline ;
+    max-width: 160px;
+    max-height: 20vh;
+    margin: 0;
+    border: none;
+  }
+
+    /* Adjust the logo image */
+  .header_stuff > img,
+  header > img {
+    display: none;
+  }
+
+  .A_container, .F_container {
+    display: grid;
+    grid-template-columns: 1;
+    gap: 1rem;
+  }
+
+  /* main */
+
+  main {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .side_nav {
+    width: 100%;
+    max-height: 80px;
+    order: -1; /* optional: puts sidebar above content if you use it */
+    padding: 1rem;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 2;
+  }
+
+
+  main > .content {
+    width: 90%;
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  main > .content > .narrow_screen {
+    height: 5vh;
+  }
+
+
+}
+
+
