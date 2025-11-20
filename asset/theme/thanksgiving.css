@@ -5,18 +5,18 @@ html {
     color: #4e342e; /* dark brown for readability */
 }
 
-header {
+header, .header_stuff {
     background-color: #d2691e; /* chocolate pumpkin orange */
     color: #fff8f0;
 }
 
-header > nav > a {
+header > nav > a, .header_stuff > nav > a {
     background-color: #f8bb74; /* harvest orange */
     color: #4e342e;
     border: 1px solid #a0522d; /* sienna */
 }
 
-header > nav > a:hover {
+header > nav > a:hover, .header_stuff > nav > a:hover {
     background-color: #8b4513; /* saddle brown */
     color: white;
     border: 1px solid white;
@@ -45,7 +45,7 @@ body > footer > a {
     box-shadow: 0 0 10px #f4a460; /* sandy */
 }
 
-.content {
+.content , .F_content, .A_content{
     background-color: #fbe8d3; /* parchment */
     border-color: #deb887; /* burlywood */
     color: #5d4037; /* deep brown */
@@ -62,7 +62,7 @@ body > footer > a {
     opacity: 0.95;
 }
 
-.content:hover {
+.content:hover, .F_content:hover, .A_content:hover {
     
     /*font-size: larger;*/
     color: #bf360c; /* deep burnt orange */

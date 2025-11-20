@@ -74,14 +74,15 @@ header>h1, .header_top > h1{
 .header_stuff > img, header > img {
     position:relative;
     top:-2rem;
-    right: -1rem;
+    right: -3rem;
     max-width: 60vw;
-    max-height: 30vh;
+    max-height: 20vh;
     
     width: 30rem;
     margin: 1rem;
     border: none;
     border-radius: 0;
+    z-index: 1;
 
 
 }
@@ -93,6 +94,7 @@ header>h1, .header_top > h1{
 body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    scroll-margin-top: 60vh;
 
 }
 /* Layout container for side nav and content */
@@ -104,15 +106,15 @@ main {
 
 /* Side navigation styles */
 .side_nav {
-  width: 15%;
+  width: 10%;
   background-color: mediumblue;
   padding: 1vh 1vw;
   color: white;
   box-sizing: border-box;
 
   position:fixed;
-  top:22vh;
-  height: 70vh;
+  top:35vh;
+  height: 40vh;
   overflow-y: auto;
 }
 
@@ -206,6 +208,16 @@ used to make grid pattern
 used to make grid pattern
 */
 
+.Adoption_flex {
+   display: flex;
+  flex-wrap: wrap;
+  gap: 0rem;
+  justify-content: center;
+  padding: 0px;
+  text-align: center;
+  overflow: none;
+  margin: 0;
+}
 
 .A_container, .F_container{
   display: flex;
@@ -235,6 +247,7 @@ used to make grid pattern
     margin: 10px;
     width: 50%;     
     box-sizing: border-box;
+    
 }
 
 .F_card {
@@ -262,12 +275,16 @@ display: block;
 
 
 }
-.F_content, .A_content{
 
-height:auto;
-border: 2px rgb(12, 5, 139);
-border-style: groove;
-background-color: aquamarine;
+.A_picture {
+  max-height: 40rem;
+  width: auto;
+}
+.F_content, .A_content{
+  height:auto;
+  border: 2px rgb(12, 5, 139);
+  border-style: groove;
+  background-color: aquamarine;
 
 }
 .F_card:hover, .A_card:hover{
@@ -503,6 +520,8 @@ background-color: aquamarine;
     flex-direction: row;
     justify-content: space-between;
     z-index: 2;
+    position: fixed;
+    top: 15vh
   }
 
 
