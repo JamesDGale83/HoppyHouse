@@ -81,8 +81,8 @@
     ];
 
     // Helper to check if current date falls between two MM-DD ranges
-    /*
-    THIS IS GOOD FOR SWITCH BASED ON CALLANDER
+    /*THIS IS GOOD FOR SWITCH BASED ON CALLANDER*/
+    
     function isDateInRange(date, start, end) {
       const year = date.getFullYear();
       const current = new Date(`${year}-${start}`);
@@ -108,11 +108,11 @@
       link.href = `asset/theme/${themeFile}`;
       document.head.appendChild(link);
     }
-    */
+    
 
     /*  ///////// MINUTE BASE SWITCHING /////////////// */
 
-    
+    /*
     function applySeasonalTheme() {
   const now = new Date();
   const minute = now.getMinutes();
@@ -130,7 +130,7 @@
 }
 
 
-
+*/
  /*  ///////// MINUTE BASE SWITCHING /////////////// */
 
     applySeasonalTheme();

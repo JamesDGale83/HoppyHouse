@@ -32,14 +32,14 @@ body > footer > a {
 }
 
 /* Container and Cards */
-.main_container, .container {
+.main_container, .container, .A_container, .F_container {
     background-color: #fffaf0; /* floral white */
     border: 2px dashed #e1a95f; /* light pumpkin border */
     color: #d2691e;
     border-radius: 12px;
 }
 
-.card {
+.card, .A_card, .F_card {
     border-color: #cd853f; /* peru */
     background-color: #fff5e1; /* light warm cream */
     box-shadow: 0 0 10px #f4a460; /* sandy */
