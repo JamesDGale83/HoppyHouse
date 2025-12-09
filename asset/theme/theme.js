@@ -4,7 +4,7 @@
       {
         name: "christmas",
         file: "christmas.css",
-        start: "12-15",
+        start: "12-08",
         end: "12-31",
         themeFile: "1"
       },

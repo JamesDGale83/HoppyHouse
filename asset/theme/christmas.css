@@ -4,18 +4,18 @@ html {
     color: darkgreen;
 }
 
-header {
+header, .header_stuff {
     background-color: darkred;
     color: white;
 }
 
-header > nav > a {
+header > nav > a, .header_stuff > nav > a {
     background-color: darkgreen;
     color: darkred;
     border: solid gold;
 }
 
-header > nav > a:hover {
+header > nav > a:hover, .header_stuff > nav > a:hover {
     background-color: darkgreen;
     color: white;
     border: solid white;
@@ -40,14 +40,14 @@ body::before {
     /*        pointer-events: none; /* so it doesn’t block clicks */
 }
 
-/* Keyframes to move the snowflakes */
+/* Keyframes to move the snowflakes 
 @keyframes snowflakes {
     0% {
         transform: translate(0, 0);
     }
     100% {
-        transform: translate(-200px, 200px); /* drift down & left */
-    }
+        transform: translate(-200px, 200px);*/ /* drift down & left
+    } */
 }
 
 body > footer {
@@ -60,23 +60,25 @@ body > footer > a {
 }
 
 
-.container, .main_container {
+/* Container and Cards */
+.main_container, .container, .A_container, .F_container, .side_nav  {
     background-color: darkgreen;
     border: 2px dashed red;
     color: red;
 }
 
-.card {
+.card, .A_card, .F_card{
     border-color: green;
     background-color: #fff8dc; /* cornsilk - warm, soft */
 }
 
-.content {
+.content , .F_content, .A_content{
     background-color: #e6ffe6;
     border-color: green;
     color: darkgreen;
 }
 
+/* Hover Effects */
 .card:hover {
     
     box-shadow: gold;
@@ -91,4 +93,10 @@ body > footer > a {
     
     /*font-size: larger;*/
     color: crimson;
+}
+
+.content:hover, .F_content:hover, .A_content:hover {
+    
+    
+    color: #58aa4d; 
 }

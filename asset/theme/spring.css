@@ -4,18 +4,18 @@ html {
     color: #3b3b3b; /* dark gray for readability */
 }
 
-header {
+header, .header_stuff  {
     background-color: #a8dadc; /* light teal */
     color: #2a9d8f;
 }
 
-header > nav > a {
+header > nav > a, .header_stuff > nav > a {
     background-color: #ffe0f0; /* soft pink */
     color: #5e548e; /* muted purple */
     border: 1px solid #b5838d;
 }
 
-header > nav > a:hover {
+header > nav > a:hover, .header_stuff > nav > a:hover {
     background-color: #cdb4db; /* soft lavender */
     color: white;
     border: 1px solid white;
@@ -31,7 +31,7 @@ body > footer > a {
 }
 
 /* Container and Cards */
-.main_container, .container {
+.main_container, .container, .A_container, .F_container  {
     background-color: #edf6f9; /* very light blue */
     border: 2px dashed #a2d2ff;
     color:blue;
