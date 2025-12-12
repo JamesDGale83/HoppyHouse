@@ -52,8 +52,8 @@ header>h1, .header_top > h1{
 
 
 .header_stuff>nav, header > nav {
-    max-width: calc(80%-3rem) ;
-    width: 60;
+    max-width: calc(80% - 3rem) ;
+    width: 60vw;
     padding-bottom: 0rem;
     padding-left: 1rem;
     padding-right: 0rem;
@@ -109,7 +109,7 @@ main {
   display: flex;
   flex-direction: row;
   min-height: 100vh;
-   scroll-margin-top: 30%;
+  scroll-margin-top: 30%;
 }
 
 main > section {
@@ -183,6 +183,11 @@ body>footer>a{
 
 }
 
+body>footer>a:hover{
+  color: fuchsia;
+}
+
+
 
   img { /* small screen adjustment needed */
       max-width: 90%;
@@ -201,6 +206,13 @@ used to make grid pattern
     text-align: center;
     align-items: center;
 }
+
+.home > img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
 .main_container{
     display: inline-block;
     width: 90%;
@@ -212,7 +224,7 @@ used to make grid pattern
     border: 2rem;
     border-color: black;
     border-radius: 1rem;
-    overflow: none;
+    overflow: hidden;
     margin: 0;
     
 }
@@ -228,23 +240,22 @@ used to make grid pattern
   justify-content: center;
   padding: 0px;
   text-align: center;
-  overflow: none;
+  overflow: hidden;
   margin: 0;
 }
 
 .A_container, .F_container{
   display: flex;
   flex-wrap: wrap;
-  gap: 0rem;
-  justify-content: center;
+  justify-content: space-evenly;
   background-color: slategray;
   padding: 0px;
   text-align: center;
   color: aliceblue;
-  border: 1pX solid;
+  border: 1px solid;
   border-color: black;
   border-radius: 15px;
-  overflow: none;
+  overflow: hidden;
   margin: 0;
     
 }
@@ -274,17 +285,17 @@ used to make grid pattern
     background-color: antiquewhite;
     padding: 5px;
     height: 40rem;
-
+    gap: 1rem;
+    margin: 1rem;
 
 }
 .F_picture, .A_picture {
 
-align-items: center;
-width: 100%;
-height: auto;
 border: 2px black;
 object-fit: cover;
 display: block;
+place-self: center;
+
 
 
 }
@@ -303,24 +314,20 @@ display: block;
 .F_card:hover, .A_card:hover{
     opacity: .8;
 
-    /*transform: scale(1.1); */
+  
 }
 .F_picture:hover, .A_picture:hover{
-    opacity: 1.5;
+    opacity: 1;
     
-    /* transform: scale(1.20); */
+ 
 
 }
 .F_content:hover, .A_content:hover{
-    opacity: 1.5;
-    
-
+    opacity: 1;
     
     color: midnightblue;
-    overflow-x: visible;
-    /* transform: scaleY(1.5); 
-    font-size: large;
-    */
+    overflow-x: hidden;
+    
 
 
 }
@@ -339,6 +346,7 @@ display: block;
 .slide img {
   max-height: 30vh;
   width: auto;
+  place-self: center;
   
 }
 
@@ -357,7 +365,7 @@ display: block;
   border: 2px solid midnightblue;
   
   border-radius: 1rem;
-  display: flexbox;
+  display: flex;
   align-items: center;
   
 }
@@ -390,6 +398,7 @@ display: block;
   border: solid;
   border-radius: 1rem;
   border-color: black;
+
   
 }
 #spot3{
@@ -397,24 +406,62 @@ display: block;
 }
 
 .trouble{
+  display: flex;
   width: 40%;
   text-align: center;
   align-items: center;
+  flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   border-width: .5rem;
   border: solid;
   border-radius: clamp(0.3rem, 1vw, 1rem);
   border-color: black;
+  padding: .2rem;
+  margin: .1rem;
 }
 .trouble > img {
   width: 80%;
+}
+.trouble > p {
+  width: 90%;
 }
 
 .conclusion {
   display: block;
   width: 100%;
 
+}
+.help {
+  text-align: center;
+}
+.support {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.calltoaction{
+  position: relative;
+  z-index: 1000;
+
+  border: .1rem solid chartreuse;
+  padding: .5rem;
+  background-color: black;
+  color: chartreuse;
+  
+}
+.calltoaction:hover {
+  color: fuchsia;
+  border-color: fuchsia;
+}
+.nail {
+  
+  height: 90%;
+  
+  width: auto;
+  
+  border-radius: 0;
 }
 
 
@@ -434,7 +481,7 @@ display: block;
   bottom: 20px;
   width: 50px;
   animation: hopBack 20s linear infinite; /* slower + reversed */
-  background-color: none;
+  
   border: none !important;
   border-radius: 0 !important;
   background: none;
@@ -484,7 +531,7 @@ display: block;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: calc(90% - 200 px);
+    max-width: calc(90% - 200px);
     padding-top: 0.5rem;
   }
 
@@ -526,7 +573,7 @@ display: block;
 
   .A_container, .F_container {
     display: grid;
-    grid-template-columns: 1;
+    grid-template-columns: 1fr;
     gap: 1rem;
   }
 

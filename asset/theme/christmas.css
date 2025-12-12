@@ -11,7 +11,7 @@ header, .header_stuff {
 
 header > nav > a, .header_stuff > nav > a {
     background-color: darkgreen;
-    color: darkred;
+    color: red;
     border: solid gold;
 }
 
@@ -47,8 +47,8 @@ body::before {
     }
     100% {
         transform: translate(-200px, 200px);*/ /* drift down & left
-    } */
-}
+    } 
+}*/
 
 body > footer {
     background-color: darkred;
@@ -61,27 +61,27 @@ body > footer > a {
 
 
 /* Container and Cards */
-.main_container, .container, .A_container, .F_container, .side_nav  {
+main, .main_container, .container, .A_container, .F_container, .side_nav, .support div  {
     background-color: darkgreen;
     border: 2px dashed red;
     color: red;
 }
 
-.card, .A_card, .F_card{
-    border-color: green;
+.card, .A_card, .F_card, .troubles_group, .slide-container{
+    border-color: red;
     background-color: #fff8dc; /* cornsilk - warm, soft */
 }
 
-.content , .F_content, .A_content{
+.content , .F_content, .A_content, .trouble{
     background-color: #e6ffe6;
-    border-color: green;
+    border-color: red;
     color: darkgreen;
 }
 
 /* Hover Effects */
 .card:hover {
     
-    box-shadow: gold;
+    box-shadow: 5px 5px 3px gold;
 }
 
 .picture:hover {
