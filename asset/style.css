@@ -175,6 +175,7 @@ body>footer{
     color: white;
     padding: 1rem;
     text-align: center;
+    z-index: 10;
 
 }
 body>footer>a{
@@ -441,6 +442,20 @@ place-self: center;
   justify-content: space-around;
 }
 
+.email, .tel, .facebook {
+  position: relative;
+  z-index: 1000;
+
+  color: chartreuse;
+
+}
+.email:hover, .tel:hover, .facebook:hover {
+  color: fuchsia;
+
+}
+
+
+
 .calltoaction{
   position: relative;
   z-index: 1000;
@@ -470,8 +485,8 @@ place-self: center;
   bottom: 0;
   left: 0;
   width: 100%;
-  pointer-events: none;
-  z-index: 1000;
+  
+  z-index: 1;
   background: none;        /* ensure no background fill */
   border: none;            /* no border outline */
 }
